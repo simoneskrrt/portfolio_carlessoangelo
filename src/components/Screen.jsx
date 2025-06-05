@@ -22,14 +22,14 @@ export const Screen = (props) => {
         className="wallpaper"
         src={
           props.dark
-            ? "src/assets/screen/mac_wallpaper_dark.jpeg"
-            : "src/assets/screen/mac_wallpaper_light.jpg"
+            ? "/assets/screen/mac_wallpaper_dark.jpeg"
+            : "/assets/screen/mac_wallpaper_light.jpg"
         }
       />
       <Header color={props.dark} />
       <div className="container-grid">
         <DesktopIcon
-          imageSource="src\assets\screen\text.png"
+          imageSource="\assets\screen\text.png"
           name={"su di me.txt"}
           isShown={isShownTextEditor}
           setIsShown={setIsShownTextEditor}
@@ -37,7 +37,7 @@ export const Screen = (props) => {
           numberIcon={0}
         />
         <DesktopIcon
-          imageSource="src\assets\screen\video1.jpg"
+          imageSource="\assets\screen\video1.jpg"
           name={"video1.avi"}
           isShown={isShownVideoPlayer1}
           setIsShown={setIsShownVideoPlayer1}
@@ -45,7 +45,7 @@ export const Screen = (props) => {
           numberIcon={1}
         />
         <DesktopIcon
-          imageSource="src\assets\screen\video2.jpg"
+          imageSource="\assets\screen\video2.jpg"
           name={"video2.avi"}
           isShown={isShownVideoPlayer2}
           setIsShown={setIsShownVideoPlayer2}
@@ -53,7 +53,7 @@ export const Screen = (props) => {
           numberIcon={2}
         />
         <DesktopIcon
-          imageSource="src\assets\screen\video3.jpg"
+          imageSource="\assets\screen\video3.jpg"
           name={"video3.avi"}
           isShown={isShownVideoPlayer3}
           setIsShown={setIsShownVideoPlayer3}
@@ -107,22 +107,22 @@ export const Screen = (props) => {
       <div className="toolBar">
         <IconToolBar
           color={props.dark}
-          source="src\assets\screen\finder.png"
+          source="\assets\screen\finder.png"
           finder={true}
         />
         <IconToolBar
           color={props.dark}
-          source="src\assets\screen\text-editor.png"
+          source="\assets\screen\text-editor.png"
           isShown={isShownTextEditor}
           setIsShown={setIsShownTextEditor}
         />
         <IconToolBar
           color={props.dark}
-          source="src\assets\screen\video1.jpg"
+          source="\assets\screen\video1.jpg"
           isShown={isShownVideoPlayer1}
           setIsShown={setIsShownVideoPlayer1}
         />
-        <IconToolBar source="src\assets\screen\bin.png" />
+        <IconToolBar source="\assets\screen\bin.png" />
       </div>
     </Html>
   );
