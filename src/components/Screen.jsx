@@ -12,7 +12,9 @@ import "../styles/screen.css";
 
 export const Screen = (props) => {
   const [isShownTextEditor, setIsShownTextEditor] = useState(false);
-  const [isShownVideoPlayer, setIsShownVideoPlayer] = useState(false);
+  const [isShownVideoPlayer1, setIsShownVideoPlayer1] = useState(false);
+  const [isShownVideoPlayer2, setIsShownVideoPlayer2] = useState(false);
+  const [isShownVideoPlayer3, setIsShownVideoPlayer3] = useState(false);
 
   return (
     <Html className="html" occlude transform>
@@ -37,10 +39,26 @@ export const Screen = (props) => {
         <DesktopIcon
           imageSource="src\assets\screen\video1.jpg"
           name={"video1.avi"}
-          isShown={isShownVideoPlayer}
-          setIsShown={setIsShownVideoPlayer}
+          isShown={isShownVideoPlayer1}
+          setIsShown={setIsShownVideoPlayer1}
           color={props.dark}
           numberIcon={1}
+        />
+        <DesktopIcon
+          imageSource="src\assets\screen\video2.jpg"
+          name={"video2.avi"}
+          isShown={isShownVideoPlayer2}
+          setIsShown={setIsShownVideoPlayer2}
+          color={props.dark}
+          numberIcon={2}
+        />
+        <DesktopIcon
+          imageSource="src\assets\screen\video3.jpg"
+          name={"video3.avi"}
+          isShown={isShownVideoPlayer3}
+          setIsShown={setIsShownVideoPlayer3}
+          color={props.dark}
+          numberIcon={3}
         />
       </div>
       <Window
@@ -59,8 +77,32 @@ export const Screen = (props) => {
             color={props.dark ? "white" : "#38383A"}
           />
         }
-        setIsShown={setIsShownVideoPlayer}
-        isShown={isShownVideoPlayer}
+        setIsShown={setIsShownVideoPlayer1}
+        isShown={isShownVideoPlayer1}
+      />
+      <Window
+        color={props.dark}
+        name="video2.avi"
+        Component={
+          <VideoPlayer
+            src="https://www.youtube.com/embed/i6PU3a5Kpv0"
+            color={props.dark ? "white" : "#38383A"}
+          />
+        }
+        setIsShown={setIsShownVideoPlayer2}
+        isShown={isShownVideoPlayer2}
+      />
+      <Window
+        color={props.dark}
+        name="video3.avi"
+        Component={
+          <VideoPlayer
+            src="https://www.youtube.com/embed/umpQ9hnmKjc"
+            color={props.dark ? "white" : "#38383A"}
+          />
+        }
+        setIsShown={setIsShownVideoPlayer3}
+        isShown={isShownVideoPlayer3}
       />
       <div className="toolBar">
         <IconToolBar
@@ -77,8 +119,8 @@ export const Screen = (props) => {
         <IconToolBar
           color={props.dark}
           source="src\assets\screen\video1.jpg"
-          isShown={isShownVideoPlayer}
-          setIsShown={setIsShownVideoPlayer}
+          isShown={isShownVideoPlayer1}
+          setIsShown={setIsShownVideoPlayer1}
         />
         <IconToolBar source="src\assets\screen\bin.png" />
       </div>

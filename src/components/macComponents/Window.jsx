@@ -6,7 +6,7 @@ import "../../styles/screen.css";
 export const Window = (props) => {
   return (
     <Draggable
-      bounds={{ left: 0, top: -170, right: 494, bottom: 20 }}
+      bounds={{ left: 0, top: -320, right: 494, bottom: -135 }}
       cancel=".cancel"
     >
       <div
