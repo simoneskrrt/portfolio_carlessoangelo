@@ -19,11 +19,10 @@ export const DeskGroup = (props) => {
 
   const deskLight = useLoader(GLTFLoader, "desk/desk_light.glb");
   deskLight.scene.scale.set(0.315, 0.315, 0.315);
-  deskLight.scene.rotation.y = -Math.PI / 2;
   deskLight.scene.position.set(
-    boxDesk.max.x * 1.1375,
+    boxDesk.max.x * 0.6,
     boxDesk.max.y,
-    boxDesk.max.z * 0.525
+    - boxDesk.max.z* 0.8
   );
 
   const { camera } = useThree();

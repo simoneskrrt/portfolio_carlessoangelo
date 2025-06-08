@@ -51,7 +51,7 @@ function App() {
   return (
     <div style={{ width: window.innerWidth, height: window.innerHeight }}>
       <p id="type"></p>
-      <Canvas camera={{ position: [-300, 90, 75] }}>
+      <Canvas camera={{ position: [-150, 65, 35] }}>
         <ambientLight intensity={10} args={[0xffffff]} />
         <DeskGroup dark={dark} clicked={clicked} />
         <Rig clicked={clicked} />

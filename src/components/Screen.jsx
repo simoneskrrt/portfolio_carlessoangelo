@@ -38,7 +38,7 @@ export const Screen = (props) => {
         />
         <DesktopIcon
           imageSource="\assets\screen\video1.jpg"
-          name={"video1.avi"}
+          name={"the medieval walls.avi"}
           isShown={isShownVideoPlayer1}
           setIsShown={setIsShownVideoPlayer1}
           color={props.dark}
@@ -46,7 +46,7 @@ export const Screen = (props) => {
         />
         <DesktopIcon
           imageSource="\assets\screen\video2.jpg"
-          name={"video2.avi"}
+          name={"flash mob.avi"}
           isShown={isShownVideoPlayer2}
           setIsShown={setIsShownVideoPlayer2}
           color={props.dark}
@@ -54,7 +54,7 @@ export const Screen = (props) => {
         />
         <DesktopIcon
           imageSource="\assets\screen\video3.jpg"
-          name={"video3.avi"}
+          name={"spot ex1.avi"}
           isShown={isShownVideoPlayer3}
           setIsShown={setIsShownVideoPlayer3}
           color={props.dark}
@@ -70,7 +70,7 @@ export const Screen = (props) => {
       />
       <Window
         color={props.dark}
-        name="video1.avi"
+        name="the medieval walls.avi"
         Component={
           <VideoPlayer
             src="https://www.youtube.com/embed/N2ago2FZC_g"
@@ -82,7 +82,7 @@ export const Screen = (props) => {
       />
       <Window
         color={props.dark}
-        name="video2.avi"
+        name="flash mob.avi"
         Component={
           <VideoPlayer
             src="https://www.youtube.com/embed/i6PU3a5Kpv0"
@@ -94,7 +94,7 @@ export const Screen = (props) => {
       />
       <Window
         color={props.dark}
-        name="video3.avi"
+        name="spot ex1.avi"
         Component={
           <VideoPlayer
             src="https://www.youtube.com/embed/umpQ9hnmKjc"
@@ -122,6 +122,19 @@ export const Screen = (props) => {
           isShown={isShownVideoPlayer1}
           setIsShown={setIsShownVideoPlayer1}
         />
+        <IconToolBar
+          color={props.dark}
+          source="\assets\screen\video2.jpg"
+          isShown={isShownVideoPlayer2}
+          setIsShown={setIsShownVideoPlayer2}
+        />
+        <IconToolBar
+          color={props.dark}
+          source="\assets\screen\video3.jpg"
+          isShown={isShownVideoPlayer3}
+          setIsShown={setIsShownVideoPlayer3}
+        />
+
         <IconToolBar source="\assets\screen\bin.png" />
       </div>
     </Html>

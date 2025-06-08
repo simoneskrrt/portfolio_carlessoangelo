@@ -15,7 +15,7 @@ const List = (props) => {
     >
       <div onClick={() => setShow(!show)}>
         <p>{props.title}</p>
-        <img src="src\assets\screen\list-icon.png" />
+        <img src="\assets\screen\list-icon.png" />
       </div>
 
       <ul style={{ display: show ? "block" : "none", paddingTop: "5px" }}>
@@ -145,13 +145,13 @@ export const TextEditor = (props) => {
         }}
       >
         <p style={{ width: "1066px", height: "600px" }}>
-          Lorem ipsum dolor sit amet, consectetur adipisci elit, sed do eiusmod
-          tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim
-          veniam, quis nostrum exercitationem ullamco laboriosam, nisi ut
-          aliquid ex ea commodi consequatur. Duis aute irure reprehenderit in
-          voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-          sint obcaecat cupiditat non proident, sunt in culpa qui officia
-          deserunt mollit anim id est laborum.
+          Sono una persona solare, determinata e creativa.
+          Durante il liceo scientifico ho sviluppato un approccio analitico che
+          applico anche nei processi creativi. Ho scoperto nella produzione
+          video il mezzo ideale per esprimermi e comunicare in modo efficace
+          qualsiasi tipo di messaggio. Mi affascina il linguaggio visivo e desidero
+          crescere in un contesto formativo dinamico, dove teoria e pratica si
+          incontrano per dare forma alle idee.
         </p>
       </div>
     </div>
