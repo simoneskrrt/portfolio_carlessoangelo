@@ -1,8 +1,9 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, Suspense } from "react";
 import { Canvas, useThree, useFrame } from "@react-three/fiber";
 import { Vector3 } from "three";
 
 import { DeskGroup } from "./components/DeskGroup";
+import { Loading } from "./components/Loading";
 
 import "./styles/App.css";
 
@@ -51,11 +52,13 @@ function App() {
   return (
     <div style={{ width: window.innerWidth, height: window.innerHeight }}>
       <p id="type"></p>
-      <Canvas camera={{ position: [-150, 65, 35] }}>
-        <ambientLight intensity={10} args={[0xffffff]} />
-        <DeskGroup dark={dark} clicked={clicked} />
-        <Rig clicked={clicked} />
-      </Canvas>
+      <Suspense fallback={<Loading />}>
+        <Canvas camera={{ position: [-150, 65, 35] }}>
+          <ambientLight intensity={10} args={[0xffffff]} />
+          <DeskGroup dark={dark} clicked={clicked} />
+          <Rig clicked={clicked} />
+        </Canvas>
+      </Suspense>
     </div>
   );
 }
