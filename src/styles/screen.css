@@ -210,3 +210,13 @@ ul {
   width: 1066px;
   height: 600px;
 }
+
+.pdf-reader {
+  width: 800px;
+  height: 500px;
+  overflow-y: scroll;
+}
+
+.pdf-reader img {
+  width: 100%;
+}

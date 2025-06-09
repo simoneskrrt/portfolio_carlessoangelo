@@ -12,6 +12,7 @@ import "../styles/screen.css";
 
 export const Screen = (props) => {
   const [isShownTextEditor, setIsShownTextEditor] = useState(false);
+  const [isShownPdf, setIsShownPdf] = useState(false);
   const [isShownVideoPlayer1, setIsShownVideoPlayer1] = useState(false);
   const [isShownVideoPlayer2, setIsShownVideoPlayer2] = useState(false);
   const [isShownVideoPlayer3, setIsShownVideoPlayer3] = useState(false);
@@ -37,12 +38,20 @@ export const Screen = (props) => {
           numberIcon={0}
         />
         <DesktopIcon
+          imageSource="\assets\screen\pdf.png"
+          name={"curriculum.pdf"}
+          isShown={isShownPdf}
+          setIsShown={setIsShownPdf}
+          color={props.dark}
+          numberIcon={1}
+        />
+        <DesktopIcon
           imageSource="\assets\screen\video1.jpg"
           name={"the medieval walls.avi"}
           isShown={isShownVideoPlayer1}
           setIsShown={setIsShownVideoPlayer1}
           color={props.dark}
-          numberIcon={1}
+          numberIcon={2}
         />
         <DesktopIcon
           imageSource="\assets\screen\video2.jpg"
@@ -50,7 +59,7 @@ export const Screen = (props) => {
           isShown={isShownVideoPlayer2}
           setIsShown={setIsShownVideoPlayer2}
           color={props.dark}
-          numberIcon={2}
+          numberIcon={3}
         />
         <DesktopIcon
           imageSource="\assets\screen\video3.jpg"
@@ -58,7 +67,7 @@ export const Screen = (props) => {
           isShown={isShownVideoPlayer3}
           setIsShown={setIsShownVideoPlayer3}
           color={props.dark}
-          numberIcon={3}
+          numberIcon={4}
         />
       </div>
       <Window
@@ -67,6 +76,13 @@ export const Screen = (props) => {
         Component={<TextEditor color={props.dark} />}
         setIsShown={setIsShownTextEditor}
         isShown={isShownTextEditor}
+      />
+      <Window
+        color={props.dark}
+        name="curriculum.pdf"
+        Component={<div className="pdf-reader"> <img src="assets/screen/curriculum.jpg" /> </div>}
+        setIsShown={setIsShownPdf}
+        isShown={isShownPdf}
       />
       <Window
         color={props.dark}
@@ -115,6 +131,12 @@ export const Screen = (props) => {
           source="\assets\screen\text-editor.png"
           isShown={isShownTextEditor}
           setIsShown={setIsShownTextEditor}
+        />
+        <IconToolBar
+          color={props.dark}
+          source="\assets\screen\pdf-reader.png"
+          isShown={isShownPdf}
+          setIsShown={setIsShownPdf}
         />
         <IconToolBar
           color={props.dark}

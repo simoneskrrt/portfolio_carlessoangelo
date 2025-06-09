@@ -37,7 +37,7 @@ export const DesktopIcon = (props) => {
       }}
     >
       <img src={props.imageSource} />
-      <p>{props.name}</p>
+      <p style={{overflowX: "hidden"}}>{props.name}</p>
     </div>
   );
 };
