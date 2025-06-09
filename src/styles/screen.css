@@ -171,6 +171,10 @@ ul {
   margin-bottom: 8px;
 }
 
+.text-content p {
+  overflow-y: scroll;
+}
+
 .container-grid {
   display: grid;
   grid-template-columns: max-content;

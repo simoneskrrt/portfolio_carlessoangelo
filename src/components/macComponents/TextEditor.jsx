@@ -141,17 +141,38 @@ export const TextEditor = (props) => {
           textDecorationLine: styleUnderline == true ? "underline" : "",
           fontStyle: styleItalic == true ? "italic" : "",
           height: "100%",
-          backgroundColor: props.color ? "#1E1E1E" : "#FFFFFF"
+          backgroundColor: props.color ? "#1E1E1E" : "#FFFFFF",
         }}
       >
         <p style={{ width: "1066px", height: "600px" }}>
-          Sono una persona solare, determinata e creativa.
+          Presentazione: Sono una persona solare, determinata e creativa.
           Durante il liceo scientifico ho sviluppato un approccio analitico che
           applico anche nei processi creativi. Ho scoperto nella produzione
           video il mezzo ideale per esprimermi e comunicare in modo efficace
-          qualsiasi tipo di messaggio. Mi affascina il linguaggio visivo e desidero
-          crescere in un contesto formativo dinamico, dove teoria e pratica si
-          incontrano per dare forma alle idee.
+          qualsiasi tipo di messaggio. Mi affascina il linguaggio visivo e
+          desidero crescere in un contesto formativo dinamico, dove teoria e
+          pratica si incontrano per dare forma alle idee. Istruzione e
+          formazione: Diploma, Liceo Tito Lucrezio Caro di Cittadella Settembre
+          2020 - Giugno 2025 Il percorso di studi superiori al Liceo delle
+          Scienze Applicate mi ha dato l'opportunità di formare una mentalità
+          analitica, logica e creativa, oltre ad essere stato per me un luogo
+          estremamente stimolante, data la moltitudine di opportunità ed
+          esperienze offerte. Esperienze lavorative: Stage presso Jonny Mole SRL
+          (Luglio 2023 - Agosto 2023) L’agenzia di comunicazione è un ambiente
+          che ho trovato essere estremamente creativo, dinamico e stimolante,
+          specie per la possibilità che mi è stata data di partecipare fin da
+          subito ai loro lavori. Stage presso Studio Due di Francesco Mansutti,
+          Padova (Giugno 2022 - Ottobre 2022) L'opportunità di lavorare a
+          stretto contatto con figure altamente specializzate del settore mi ha
+          permesso di capire realmente cosa sia il mondo dell'audiovisione e
+          come esso si interfacci con le grandi committenze, sia per gli aspetti
+          negativi che quelli positivi. Attività extracurricolari: Summer School
+          presso Anica Academy, Palermo (Giugno 2023 - Luglio 2023) La
+          partecipazione al campus Anica Acadamy Summer School, che ha avuto
+          luogo in una delle sedi CSC, mi ha dato modo di restare a stretto
+          contatto con gli studenti laureandi per tutta la durata del corso e
+          capire realmente cosa vuol dire studiare presso il Centro Sperimentale
+          di Cinematografia.
         </p>
       </div>
     </div>
