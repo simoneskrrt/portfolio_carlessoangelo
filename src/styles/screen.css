@@ -134,17 +134,19 @@ ul {
   width: 120px;
   padding: 3px 5px;
   border-radius: 5px;
+  height: min-content;
 }
 
 .text-menu div {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: min-content;
 }
 
 .text-menu div img {
   width: 8%;
-  height: max-content;
+  height: min-content;
 }
 
 .text-top {
